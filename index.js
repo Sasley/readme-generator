@@ -2,6 +2,43 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require("path");
+const questions = [
+    {
+     type: 'input', 
+     name: 'title',
+     message: 'Project title?',  
+    }
+    {
+     type: 'input',
+     name: 'desciption',
+     message: 'Project description?'  
+    }
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Installation instructions?'  
+    }
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Project usage?'  
+    }
+    {
+        type: 'input',
+        name: 'resources',
+        message: 'Resource Info?'  
+    }
+    {
+        type: 'input',
+        name: 'email',
+        message: 'For questions(email)?'  
+    }
+    {
+        type: 'input',
+        name: 'github',
+        message: 'For questions(sis.sasley)?'  
+    }
+]
 const generateMarkdown = require(utils/generateMarkdown.js);
 // TODO: Create an array of questions for user input
 const questions = [];
