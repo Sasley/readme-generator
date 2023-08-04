@@ -11,33 +11,42 @@ const questions = [
     {
      type: 'input',
      name: 'desciption',
-     message: 'Project description?'  
+     message: 'Project description?',  
     }
     {
         type: 'input',
         name: 'installation',
-        message: 'Installation instructions?'  
+        message: 'Installation instructions?',  
     }
     {
         type: 'input',
         name: 'usage',
-        message: 'Project usage?'  
+        message: 'Project usage?',  
     }
     {
         type: 'input',
         name: 'resources',
-        message: 'Resource Info?'  
+        message: 'Resource Info?',  
     }
     {
         type: 'input',
         name: 'email',
-        message: 'For questions(email)?'  
+        message: 'For questions(email)?',  
     }
     {
         type: 'input',
         name: 'github',
-        message: 'For questions(sis.sasley)?'  
+        message: 'For questions(sis.sasley)?',  
     }
+    {
+        type: 'list',
+        name: 'license',
+        message: 'License?',
+        choices: ['MIT', 'ISC', 'GNUPLv3'],
+        filter(val){
+            return val.toLowerCase();
+        }  
+       }
 ]
 const generateMarkdown = require(utils/generateMarkdown.js);
 // TODO: Create an array of questions for user input
