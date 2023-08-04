@@ -2,18 +2,26 @@
 
 ## Description
 This is a readme-generator to help people make a readme file.
-When 
 
 ### Usage
-Node .js
+Node .js, md,git a
+
+
 Inquirer package(https://www.npmjs.com/package/inquirer/v/8.2.4).
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+#### User Story
 
-Please make sure to update tests as appropriate.
+As a developer 
+I want a README generator
+So that I can quick;y create a professional README for a ne project
+When I use node.js I am met with a series of questions
+Then I answer the generated questions
+A professional README will populate depending on my answers.
 
-## License
+##### Screenshot
+
+###### Video
+
+###### License
 
 [MIT](https://choosealicense.com/licenses/mit/)![test](./images/test.png)
