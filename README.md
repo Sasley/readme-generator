@@ -19,9 +19,9 @@ Then I answer the generated questions
 A professional README will populate depending on my answers.
 
 ##### Screenshot
-
+![Alt text](<images/Screen Shot 2023-08-03 at 11.40.38 PM.png>)
 ###### Video
-
+<video src="images/readme-generator.mp4" controls title="Title"></video>
 ###### License
 
 [MIT](https://choosealicense.com/licenses/mit/)![test](./images/test.png)
