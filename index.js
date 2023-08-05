@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require("path");
 
-const generateMarkdown = require(utils/generateMarkdown.js);
+const generateMarkdown = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 
 const questions = [
@@ -11,37 +11,37 @@ const questions = [
      type: 'input', 
      name: 'title',
      message: 'Project title?',  
-    }
+    },
     {
      type: 'input',
      name: 'desciption',
      message: 'Project description?',  
-    }
+    },
     {
         type: 'input',
         name: 'installation',
         message: 'Installation instructions?',  
-    }
+    },
     {
         type: 'input',
         name: 'usage',
         message: 'Project usage?',  
-    }
+    },
     {
         type: 'input',
         name: 'resources',
         message: 'Resource Info?',  
-    }
+    },
     {
         type: 'input',
         name: 'email',
         message: 'For questions(email)?',  
-    }
+    },
     {
         type: 'input',
         name: 'github',
         message: 'For questions(sis.sasley)?',  
-    }
+    },
     {
         type: 'list',
         name: 'license',
@@ -60,9 +60,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((response) => {
+    inquirer.prompt(questions).then((response) => {
         console.log("Creating Professional README.md File...");
-        writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+        // writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
     });
 }
 
