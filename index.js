@@ -15,7 +15,7 @@ const questions = [
     {
      type: 'input',
      name: 'desciption',
-     message: 'Project description (what, why, how)?',  
+     message: 'Project description?',  
     },
     {
         type: 'input',
@@ -30,12 +30,7 @@ const questions = [
     {
         type: 'input',
         name: 'resources',
-        message: 'Resource Info (collaboartors, etc)?',  
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'For questions(email)?',  
+        message: 'Resources?',  
     },
     {
         type: 'input',
@@ -67,4 +62,12 @@ function init() {
 }
 
 // Function call to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile("README.md", generateMarkdown(userInput));
+
+    });
+}
 init();
