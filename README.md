@@ -1,4 +1,4 @@
-# Fruit stop
+# Fruit truck
   #License:
 
   ##Table of Contents
@@ -10,16 +10,16 @@
   -[Github](#github)
 
   ##Title:
-  Fruit stop
+  Fruit truck
   ##Description:
   undefined
   ##Installation:
-  install npm
+  use node.js and inquirer
   ##Usage:
-  install npm, inquirer
+  install npm
   ##Resources:
-  You Tube
+  YouTube
   ##Github:
-  sis.sasley
+  Sis.Sasley
   ##License:
   mit
