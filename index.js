@@ -15,12 +15,12 @@ const questions = [
     {
      type: 'input',
      name: 'desciption',
-     message: 'Project description?',  
+     message: 'Project description (what, why, how)?',  
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Installation instructions?',  
+        message: 'How to install?',  
     },
     {
         type: 'input',
@@ -30,7 +30,7 @@ const questions = [
     {
         type: 'input',
         name: 'resources',
-        message: 'Resource Info?',  
+        message: 'Resource Info (collaboartors, etc)?',  
     },
     {
         type: 'input',
@@ -40,7 +40,7 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'For questions(sis.sasley)?',  
+        message: 'For questions(github)?',  
     },
     {
         type: 'list',
